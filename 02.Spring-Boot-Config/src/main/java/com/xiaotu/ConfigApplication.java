@@ -1,6 +1,5 @@
 package com.xiaotu;
 
-import com.xiaotu.bean.BlogProperties;
 import com.xiaotu.bean.ConfigBean;
 import com.xiaotu.bean.TestConfigBean;
 import org.springframework.boot.Banner.Mode;
@@ -16,7 +15,7 @@ public class ConfigApplication {
 		SpringApplication app = new SpringApplication(ConfigApplication.class);
 		app.setBannerMode(Mode.OFF);
 
-		SpringApplication.run(ConfigApplication.class, args);
+		app.run(args);
 	}
 
 }

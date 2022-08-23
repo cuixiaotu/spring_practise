@@ -19,8 +19,9 @@ public class IndexController {
 
     @RequestMapping("/")
     String index() {
-        return testConfigBean.getName()+"，"+testConfigBean.getAge();
-        //        return configBean.getName()+"，"+configBean.getAge();
+        return blogProperties.getName() + ". " + blogProperties.getTitle();
+        // return testConfigBean.getName()+"，"+testConfigBean.getAge();
+        // return configBean.getName()+"，"+configBean.getAge();
     }
 
 }
