@@ -9,6 +9,7 @@
         <module name="03.Spring-Boot-MyBatis" />
         <module name="05.Spring-Boot-MyBatis-MultiDataSource" />
         <module name="04.Spring-Boot-JdbcTemplate" />
+        <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" />
         <module name="demo" />
         <module name="02.Spring-Boot-Config" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="03.Spring-Boot-MyBatis" target="1.8" />
       <module name="04.Spring-Boot-JdbcTemplate" target="1.8" />
       <module name="05.Spring-Boot-MyBatis-MultiDataSource" target="1.8" />
+      <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,6 +29,7 @@
       <module name="03.Spring-Boot-MyBatis" options="-parameters" />
       <module name="04.Spring-Boot-JdbcTemplate" options="-parameters" />
       <module name="05.Spring-Boot-MyBatis-MultiDataSource" options="-parameters" />
+      <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/03.Spring-Boot-MyBatis/03.Spring-Boot-MyBatis.iml" filepath="$PROJECT_DIR$/03.Spring-Boot-MyBatis/03.Spring-Boot-MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/04.Spring-Boot-JdbcTemplate/04.Spring-Boot-JdbcTemplate.iml" filepath="$PROJECT_DIR$/04.Spring-Boot-JdbcTemplate/04.Spring-Boot-JdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/05.Spring-Boot-MyBatis-MultiDataSource/05.Spring-Boot-MyBatis-MultiDataSource.iml" filepath="$PROJECT_DIR$/05.Spring-Boot-MyBatis-MultiDataSource/05.Spring-Boot-MyBatis-MultiDataSource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/06.Spring-Boot-JdbcTemplate-MultiDataSource.iml" filepath="$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/06.Spring-Boot-JdbcTemplate-MultiDataSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" filepath="$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring_practise.iml" filepath="$PROJECT_DIR$/.idea/spring_practise.iml" />
     </modules>
