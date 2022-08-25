@@ -1,7 +1,7 @@
 package com.xiaotu.multidata.service;
 
 
-import com.xiaotu.mybatis.bean.Student;
+import com.xiaotu.multidata.bean.Student;
 
 import java.util.List;
 import java.util.Map;
@@ -16,6 +16,5 @@ public interface StudentService {
     //读mysql2
     Student queryStudentBySno(String sno);
     List<Map<String, Object>> getAllStudents();
-    List<Map<String, Object>> getAllStudentsFromSlave();
 
 }

@@ -1,15 +1,13 @@
-package com.xiaotu.multidata.mysqldao;
+package com.xiaotu.multidata.slavedao;
+
+import com.xiaotu.multidata.bean.Student;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 import java.util.Map;
 
-import com.xiaotu.mybatis.bean.Student;
-import org.apache.ibatis.annotations.*;
-import org.springframework.context.annotation.Primary;
-
-@Primary
 @Mapper
-public interface MasterStudentMapper {
+public interface SlaveStudentMapper {
 
     @Insert("insert into student(sno,sname,ssex) values(#{sno},#{name},#{sex})")
     int add(Student student);
@@ -29,10 +27,5 @@ public interface MasterStudentMapper {
     Student queryStudentBySno(String sno);
 
     @Select("select * from student")
-    @Results(id = "student",value= {
-            @Result(property = "sno", column = "sno", javaType = String.class),
-            @Result(property = "name", column = "sname", javaType = String.class),
-            @Result(property = "sex", column = "ssex", javaType = String.class)
-    })
     List<Map<String, Object>> getAllStudents();
 }

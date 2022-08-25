@@ -18,26 +18,25 @@ import javax.sql.DataSource;
 @MapperScan(basePackages  = SlaveDatasourceConfig.PACKAGE, sqlSessionFactoryRef = "slaveSqlSessionFactory")
 public class SlaveDatasourceConfig {
     // mysqldao扫描路径
-    public static final String PACKAGE = "com.xiaotu.mysqldao";
+    public static final String PACKAGE = "com.xiaotu.multidata.slavedao";
     // mybatis mapper扫描路径
-    public static final String MAPPER_LOCATION = "classpath:mapper/mysql/slaveStudentMapper.xml";
+    public static final String MAPPER_LOCATION = "classpath:mapper/slave/*.xml";
 
     @Primary
-    @Bean(name = "slavedatasource")
+    @Bean(name = "slaveDataSource")
     @ConfigurationProperties("spring.datasource.druid.slave")
     public DataSource mysqlDataSource() {
         return DruidDataSourceBuilder.create().build();
     }
 
-    @Bean(name = "slaveTransactionManager")
     @Primary
+    @Bean(name = "slaveTransactionManager")
     public DataSourceTransactionManager slaveTransactionManager() {
         return new DataSourceTransactionManager(mysqlDataSource());
     }
 
     @Bean(name = "slaveSqlSessionFactory")
-    @Primary
-    public SqlSessionFactory slaveSqlSessionFactory(@Qualifier("slavedatasource") DataSource dataSource)
+    public SqlSessionFactory slaveSqlSessionFactory(@Qualifier("slaveDataSource") DataSource dataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);

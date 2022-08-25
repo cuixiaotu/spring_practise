@@ -19,26 +19,26 @@ import javax.sql.DataSource;
 public class MasterDatasourceConfig {
 
     // mysqldao扫描路径
-    public static final String PACKAGE = "com.xiaotu.mysqldao";
+    public static final String PACKAGE = "com.xiaotu.multidata.masterdao";
     // mybatis mapper扫描路径
-    public static final String MAPPER_LOCATION = "classpath:mapper/mysql/MasterStudentMapper.xml";
+    public static final String MAPPER_LOCATION = "classpath:mapper/master/*.xml";
 
     @Primary
-    @Bean(name = "masterdatasource")
+    @Bean(name = "masterDataSource")
     @ConfigurationProperties("spring.datasource.druid.master")
     public DataSource mysqlDataSource() {
         return DruidDataSourceBuilder.create().build();
     }
 
-    @Bean(name = "masterTransactionManager")
     @Primary
+    @Bean(name = "masterTransactionManager")
     public DataSourceTransactionManager masterTransactionManager() {
         return new DataSourceTransactionManager(mysqlDataSource());
     }
 
-    @Bean(name = "masterSqlSessionFactory")
     @Primary
-    public SqlSessionFactory masterSqlSessionFactory(@Qualifier("masterdatasource") DataSource dataSource)
+    @Bean(name = "masterSqlSessionFactory")
+    public SqlSessionFactory masterSqlSessionFactory(@Qualifier("masterDataSource") DataSource dataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);

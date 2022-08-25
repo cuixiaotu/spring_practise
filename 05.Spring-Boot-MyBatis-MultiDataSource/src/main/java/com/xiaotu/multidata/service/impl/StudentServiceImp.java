@@ -1,9 +1,10 @@
 package com.xiaotu.multidata.service.impl;
 
-import com.xiaotu.multidata.mysqldao.MasterStudentMapper;
-//import com.xiaotu.multidata.mysqldao.SlaveStudentMapper;
-import com.xiaotu.mybatis.bean.Student;
-import com.xiaotu.mybatis.service.StudentService;
+import com.xiaotu.multidata.masterdao.MasterStudentMapper;
+import com.xiaotu.multidata.slavedao.SlaveStudentMapper;
+
+import com.xiaotu.multidata.service.StudentService;
+import com.xiaotu.multidata.bean.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +16,8 @@ public class StudentServiceImp implements StudentService {
 
     @Autowired
     private MasterStudentMapper masterStudentMapper;
-/*    @Autowired
-    private SlaveStudentMapper slaveStudentMapper;*/
+    @Autowired
+    private SlaveStudentMapper slaveStudentMapper;
 
 
     @Override
@@ -39,15 +40,11 @@ public class StudentServiceImp implements StudentService {
        return masterStudentMapper.queryStudentBySno(sno);
     }
 
-    //    @Override
-//    public Student queryStudentBySno(String sno) {
-//        return slaveStudentMapper.queryStudentBySno(sno);
-//    }
-//
-//
-//    public List<Map<String, Object>> getAllStudentsFromSlave() {
-//        return slaveStudentMapper.getAllStudents();
-//    }
+    @Override
+    public List<Map<String, Object>> getAllStudents() {
+        return slaveStudentMapper.getAllStudents();
+    }
+
 
     public List<Map<String, Object>> getAllStudentsFromMaster() {
         return masterStudentMapper.getAllStudents();
