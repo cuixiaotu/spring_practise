@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/04.Spring-Boot-JdbcTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/05.Spring-Boot-MyBatis-MultiDataSource/pom.xml" />
         <option value="$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/pom.xml" />
+        <option value="$PROJECT_DIR$/07.Spring-Boot-AOP-Log/pom.xml" />
       </list>
     </option>
   </component>
