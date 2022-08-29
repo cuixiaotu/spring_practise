@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/06.Spring-Boot-JdbcTemplate-MultiDataSource.iml" filepath="$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/06.Spring-Boot-JdbcTemplate-MultiDataSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/07.Spring-Boot-AOP-Log/07.Spring-Boot-AOP-Log.iml" filepath="$PROJECT_DIR$/07.Spring-Boot-AOP-Log/07.Spring-Boot-AOP-Log.iml" />
       <module fileurl="file://$PROJECT_DIR$/08.Spring-Boot-Thymeleaf/08.Spring-Boot-Thymeleaf.iml" filepath="$PROJECT_DIR$/08.Spring-Boot-Thymeleaf/08.Spring-Boot-Thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09.Spring-Boot-Redis-Cache/09.Spring-Boot-Redis-Cache.iml" filepath="$PROJECT_DIR$/09.Spring-Boot-Redis-Cache/09.Spring-Boot-Redis-Cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" filepath="$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring_practise.iml" filepath="$PROJECT_DIR$/.idea/spring_practise.iml" />
     </modules>

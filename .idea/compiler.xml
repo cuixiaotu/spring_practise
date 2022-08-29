@@ -10,6 +10,7 @@
         <module name="04.Spring-Boot-JdbcTemplate" />
         <module name="03.Spring-Boot-MyBatis" />
         <module name="07.Spring-Boot-AOP-Log" />
+        <module name="09.Spring-Boot-Redis-Cache" />
         <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" />
         <module name="demo" />
         <module name="08.Spring-Boot-Thymeleaf" />
@@ -24,6 +25,7 @@
       <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" target="1.8" />
       <module name="07.Spring-Boot-AOP-Log" target="1.8" />
       <module name="08.Spring-Boot-Thymeleaf" target="1.8" />
+      <module name="09.Spring-Boot-Redis-Cache" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -36,6 +38,7 @@
       <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" options="-parameters" />
       <module name="07.Spring-Boot-AOP-Log" options="-parameters" />
       <module name="08.Spring-Boot-Thymeleaf" options="-parameters" />
+      <module name="09.Spring-Boot-Redis-Cache" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
