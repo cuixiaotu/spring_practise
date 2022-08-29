@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/05.Spring-Boot-MyBatis-MultiDataSource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/07.Spring-Boot-AOP-Log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08.Spring-Boot-Thymeleaf/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

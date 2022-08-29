@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/05.Spring-Boot-MyBatis-MultiDataSource/pom.xml" />
         <option value="$PROJECT_DIR$/06.Spring-Boot-JdbcTemplate-MultiDataSource/pom.xml" />
         <option value="$PROJECT_DIR$/07.Spring-Boot-AOP-Log/pom.xml" />
+        <option value="$PROJECT_DIR$/08.Spring-Boot-Thymeleaf/pom.xml" />
       </list>
     </option>
   </component>
