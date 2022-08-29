@@ -26,7 +26,7 @@ public class LogAspect {
     @Autowired
     private SysLogDao sysLogDao;
 
-    @Pointcut("@annotation(com.xiaotu.annotation.Log)")
+    @Pointcut("@annotation(com.xiaotu.aoplog.annotation.Log)")
     public void pointcut() {
     }
 
@@ -75,7 +75,7 @@ public class LogAspect {
         // 设置IP地址
         sysLog.setIp(IPUtils.getIpAddr(request));
         // 模拟一个用户名
-        sysLog.setUsername("mrbird");
+        sysLog.setUsername("xiaotu");
         sysLog.setTime((int) time);
         Date date = new Date();
         sysLog.setCreateTime(date);

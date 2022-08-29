@@ -1,6 +1,3 @@
-server:
-  context-path: /web
-
 spring:
   datasource:
     druid:
@@ -20,7 +17,7 @@ spring:
       time-between-eviction-runs-millis: 60000
       # 配置连接在池中的最小生存时间
       min-evictable-idle-time-millis: 300000
-      validation-query: select '1' from dual
+      validation-query: select '1'
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
@@ -61,3 +58,5 @@ spring:
       filter:
         stat:
           log-slow-sql: true
+
+debug: true
