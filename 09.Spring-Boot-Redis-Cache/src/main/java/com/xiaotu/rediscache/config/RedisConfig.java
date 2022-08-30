@@ -8,13 +8,17 @@ import org.springframework.cache.CacheManager;
 import org.springframework.cache.interceptor.KeyGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.RedisSerializationContext;
 
 import java.lang.reflect.Method;
+import java.time.Duration;
 
 @Configuration
 public class RedisConfig {
@@ -37,14 +41,23 @@ public class RedisConfig {
     }
 
     //缓存管理器
-    Bean
+/*
+    @Bean
     public CacheManager cacheManager(@SuppressWarnings("rawtypes") RedisTemplate redisTemplate){
-        RedisCacheManager cacheManager = new RedisCacheManager(redisTemplate);
-        // 设置缓存过期时间（秒）
-        cacheManager.setDefaultExpiration(3600);
+        RedisCacheConfiguration configuration = RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofMinutes(1))
+                .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer()));
+
+        RedisCacheManager cacheManager = RedisCacheManager.builder()
+
         return cacheManager;
 
     }
+*/
+
+
+//    public CacheManager cacheManager(RedisConnectionFactory r){
+//
+//    }
 
     @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
