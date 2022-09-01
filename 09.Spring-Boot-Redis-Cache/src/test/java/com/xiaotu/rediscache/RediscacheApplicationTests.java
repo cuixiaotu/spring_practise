@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import service.StudentService;
+import com.xiaotu.rediscache.service.StudentService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 class RediscacheApplicationTests {
+
 	@Autowired
 	private StudentService studentService;
 
@@ -36,7 +37,9 @@ class RediscacheApplicationTests {
 	}
 
 	@Test
-	void contextLoads() {
+	public void test3() {
+
+		System.out.println("学号" + "的学生姓名为：" );
 	}
 
 }

@@ -1,10 +1,10 @@
-package service.impl;
+package com.xiaotu.rediscache.service.impl;
 
 import com.xiaotu.rediscache.bean.Student;
 import com.xiaotu.rediscache.mapper.StudentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import service.StudentService;
+import com.xiaotu.rediscache.service.StudentService;
 
 @Service("studentService")
 public class StudentServiceImpl  implements StudentService {
@@ -27,3 +27,4 @@ public class StudentServiceImpl  implements StudentService {
         return studentMapper.queryStudentBySno(sno);
     }
 }
+

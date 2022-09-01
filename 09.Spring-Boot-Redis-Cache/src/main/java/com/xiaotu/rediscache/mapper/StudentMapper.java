@@ -3,9 +3,7 @@ package com.xiaotu.rediscache.mapper;
 import com.xiaotu.rediscache.bean.Student;
 import org.apache.ibatis.annotations.*;
 import org.springframework.cache.annotation.CacheConfig;
-
 @Mapper
-@CacheConfig(cacheNames = "student")
 public interface StudentMapper {
 
     @Update("update student set sname=#{name},ssex=#{sex} where sno=#{sno}")
