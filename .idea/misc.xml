@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/07.Spring-Boot-AOP-Log/pom.xml" />
         <option value="$PROJECT_DIR$/08.Spring-Boot-Thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/09.Spring-Boot-Redis-Cache/pom.xml" />
+        <option value="$PROJECT_DIR$/10.Spring-Boot-Ehcache-Cache/pom.xml" />
       </list>
     </option>
   </component>
