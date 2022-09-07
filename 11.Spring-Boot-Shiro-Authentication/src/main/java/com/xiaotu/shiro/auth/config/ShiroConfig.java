@@ -1,15 +1,14 @@
 package com.xiaotu.shiro.auth.config;
 
-import com.xiaotu.shiro.auth.shiro.ShiroRealm;
-import org.apache.shiro.realm.Realm;
+import java.util.LinkedHashMap;
+
+import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.apache.shiro.web.mgt.WebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.apache.shiro.mgt.SecurityManager;
 
-import java.util.LinkedHashMap;
+import com.xiaotu.shiro.auth.shiro.ShiroRealm;
 
 @Configuration
 public class ShiroConfig {
@@ -29,16 +28,16 @@ public class ShiroConfig {
         LinkedHashMap<String,String> filterChainDefinitionMap = new LinkedHashMap<>();
 
         //定义filterChain ,静态资源不拦
-        filterChainDefinitionMap.put("/css/**","anno");
-        filterChainDefinitionMap.put("/js/**","anno");
-        filterChainDefinitionMap.put("/fonts/**","anno");
-        filterChainDefinitionMap.put("/img/**","anno");
+        filterChainDefinitionMap.put("/css/**","anon");
+        filterChainDefinitionMap.put("/js/**","anon");
+        filterChainDefinitionMap.put("/fonts/**","anon");
+        filterChainDefinitionMap.put("/img/**","anon");
 
         //druid数据源监控不拦截
-        filterChainDefinitionMap.put("/druid/**","anno");
+        filterChainDefinitionMap.put("/druid/**","anon");
         //配置退出过滤器
         filterChainDefinitionMap.put("/logout","logout");
-        filterChainDefinitionMap.put("/","anno");
+        filterChainDefinitionMap.put("/","anon");
         //其他需要认证
         filterChainDefinitionMap.put("/**","authc");
 
@@ -47,7 +46,7 @@ public class ShiroConfig {
     }
 
     @Bean
-    public WebSecurityManager securityManager(){
+    public SecurityManager securityManager(){
         // 配置
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         securityManager.setRealm(shiroRealm());
@@ -55,9 +54,8 @@ public class ShiroConfig {
     }
 
     @Bean
-    public Realm shiroRealm(){
-        // 配置Realm，需自己实现
-        Realm shiroRealm = new ShiroRealm();
+    public ShiroRealm shiroRealm(){
+        ShiroRealm shiroRealm = new ShiroRealm();
         return shiroRealm;
     }
 

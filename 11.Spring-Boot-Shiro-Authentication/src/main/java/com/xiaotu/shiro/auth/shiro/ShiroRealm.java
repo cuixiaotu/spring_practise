@@ -1,12 +1,19 @@
 package com.xiaotu.shiro.auth.shiro;
 
-import com.xiaotu.shiro.auth.mapper.UserMapper;
-import com.xiaotu.shiro.auth.pojo.User;
-import org.apache.shiro.authc.*;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.AuthenticationInfo;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.LockedAccountException;
+import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.xiaotu.shiro.auth.mapper.UserMapper;
+import com.xiaotu.shiro.auth.pojo.User;
 
 public class ShiroRealm extends AuthorizingRealm {
 
@@ -24,18 +31,17 @@ public class ShiroRealm extends AuthorizingRealm {
      * 登录认证
      */
     @Override
-    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         // 获取用户输入的账号和密码
-        String userName = (String) authenticationToken.getPrincipal();
-        String password = new String((char []) authenticationToken.getCredentials());
+        String userName = (String) token.getPrincipal();
+        String password = new String((char[]) token.getCredentials());
 
-        System.out.println("用户："+userName+",密码："+password);
-        //
+        System.out.println("用户" + userName + "认证-----ShiroRealm.doGetAuthenticationInfo");
         User user = userMapper.findByUserName(userName);
-        if (user == null){
+
+        if (user == null) {
             throw new UnknownAccountException("用户名或密码错误！");
         }
-
         if (!password.equals(user.getPassword())) {
             throw new IncorrectCredentialsException("用户名或密码错误！");
         }
