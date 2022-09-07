@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/10.Spring-Boot-Ehcache-Cache/pom.xml" />
         <option value="$PROJECT_DIR$/11.Spring-Boot-Shiro-Authentication/pom.xml" />
         <option value="$PROJECT_DIR$/18.Spring-Boot-Jackson/pom.xml" />
+        <option value="$PROJECT_DIR$/19.Spring-Boot-Testing/pom.xml" />
       </list>
     </option>
   </component>
