@@ -9,6 +9,7 @@
         <module name="05.Spring-Boot-MyBatis-MultiDataSource" />
         <module name="04.Spring-Boot-JdbcTemplate" />
         <module name="10.Spring-Boot-Ehcache-Cache" />
+        <module name="18.Spring-Boot-Jackson" />
         <module name="03.Spring-Boot-MyBatis" />
         <module name="07.Spring-Boot-AOP-Log" />
         <module name="09.Spring-Boot-Redis-Cache" />
@@ -30,6 +31,7 @@
       <module name="09.Spring-Boot-Redis-Cache" target="1.8" />
       <module name="10.Spring-Boot-Ehcache-Cache" target="1.8" />
       <module name="11.Spring-Boot-Shiro-Authentication" target="1.8" />
+      <module name="18.Spring-Boot-Jackson" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -45,6 +47,7 @@
       <module name="09.Spring-Boot-Redis-Cache" options="-parameters" />
       <module name="10.Spring-Boot-Ehcache-Cache" options="-parameters" />
       <module name="11.Spring-Boot-Shiro-Authentication" options="-parameters" />
+      <module name="18.Spring-Boot-Jackson" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>

@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/09.Spring-Boot-Redis-Cache/09.Spring-Boot-Redis-Cache.iml" filepath="$PROJECT_DIR$/09.Spring-Boot-Redis-Cache/09.Spring-Boot-Redis-Cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/10.Spring-Boot-Ehcache-Cache/10.Spring-Boot-Ehcache-Cache.iml" filepath="$PROJECT_DIR$/10.Spring-Boot-Ehcache-Cache/10.Spring-Boot-Ehcache-Cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/11.Spring-Boot-Shiro-Authentication/11.Spring-Boot-Shiro-Authentication.iml" filepath="$PROJECT_DIR$/11.Spring-Boot-Shiro-Authentication/11.Spring-Boot-Shiro-Authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18.Spring-Boot-Jackson/18.Spring-Boot-Jackson.iml" filepath="$PROJECT_DIR$/18.Spring-Boot-Jackson/18.Spring-Boot-Jackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" filepath="$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring_practise.iml" filepath="$PROJECT_DIR$/.idea/spring_practise.iml" />
     </modules>
