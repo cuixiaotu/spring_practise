@@ -23,6 +23,7 @@ class TestApplicationTests {
 	@Test
 	public void Test1() {
 		System.out.println("test 1+1=2");
+		System.out.println("11111111");
 		Assert.assertEquals(2, 1 + 1);
 	}
 
