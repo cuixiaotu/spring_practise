@@ -1,21 +1,24 @@
 package com.xiaotu.test;
 
 import org.junit.*;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.event.annotation.AfterTestClass;
+import org.springframework.test.context.event.annotation.BeforeTestClass;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class TestApplicationTests {
 
-	@BeforeClass
+	@BeforeAll
 	public static void beforeClassTest() {
 		System.out.println("before class test");
 	}
 
-	@Before
+	@BeforeEach
 	public void beforeTest() {
 		System.out.println("before test");
 	}
@@ -23,7 +26,6 @@ class TestApplicationTests {
 	@Test
 	public void Test1() {
 		System.out.println("test 1+1=2");
-		System.out.println("11111111");
 		Assert.assertEquals(2, 1 + 1);
 	}
 
@@ -33,12 +35,12 @@ class TestApplicationTests {
 		Assert.assertEquals(4, 2 + 2);
 	}
 
-	@After
+	@AfterEach
 	public void afterTest() {
 		System.out.println("after test");
 	}
 
-	@AfterClass
+	@AfterAll
 	public static void afterClassTest() {
 		System.out.println("after class test");
 	}
