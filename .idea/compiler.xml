@@ -15,6 +15,7 @@
         <module name="08.Spring-Boot-Thymeleaf" />
         <module name="05.Spring-Boot-MyBatis-MultiDataSource" />
         <module name="04.Spring-Boot-JdbcTemplate" />
+        <module name="20.Spring-Boot-Swagger2" />
         <module name="09.Spring-Boot-Redis-Cache" />
         <module name="11.Spring-Boot-Shiro-Authentication" />
         <module name="06.Spring-Boot-JdbcTemplate-MultiDataSource" />
@@ -31,9 +32,11 @@
       <module name="08.Spring-Boot-Thymeleaf" target="1.8" />
       <module name="09.Spring-Boot-Redis-Cache" target="1.8" />
       <module name="10.Spring-Boot-Ehcache-Cache" target="1.8" />
+      <module name="100.Spring-Boot-Emoji" target="1.8" />
       <module name="11.Spring-Boot-Shiro-Authentication" target="1.8" />
       <module name="18.Spring-Boot-Jackson" target="1.8" />
       <module name="19.Spring-Boot-Testing" target="1.8" />
+      <module name="20.Spring-Boot-Swagger2" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
