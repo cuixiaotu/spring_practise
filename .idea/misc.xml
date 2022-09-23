@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/18.Spring-Boot-Jackson/pom.xml" />
         <option value="$PROJECT_DIR$/19.Spring-Boot-Testing/pom.xml" />
         <option value="$PROJECT_DIR$/20.Spring-Boot-Swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/21.Spring-Boot-Actuator/pom.xml" />
       </list>
     </option>
   </component>

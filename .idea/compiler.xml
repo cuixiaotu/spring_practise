@@ -11,6 +11,7 @@
         <module name="03.Spring-Boot-MyBatis" />
         <module name="07.Spring-Boot-AOP-Log" />
         <module name="19.Spring-Boot-Testing" />
+        <module name="21.Spring-Boot-Actuator" />
         <module name="demo" />
         <module name="08.Spring-Boot-Thymeleaf" />
         <module name="05.Spring-Boot-MyBatis-MultiDataSource" />
@@ -37,6 +38,7 @@
       <module name="18.Spring-Boot-Jackson" target="1.8" />
       <module name="19.Spring-Boot-Testing" target="1.8" />
       <module name="20.Spring-Boot-Swagger2" target="1.8" />
+      <module name="21.Spring-Boot-Actuator" target="1.8" />
       <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

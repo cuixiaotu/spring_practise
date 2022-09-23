@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/18.Spring-Boot-Jackson/18.Spring-Boot-Jackson.iml" filepath="$PROJECT_DIR$/18.Spring-Boot-Jackson/18.Spring-Boot-Jackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/19.Spring-Boot-Testing/19.Spring-Boot-Testing.iml" filepath="$PROJECT_DIR$/19.Spring-Boot-Testing/19.Spring-Boot-Testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/20.Spring-Boot-Swagger2/20.Spring-Boot-Swagger2.iml" filepath="$PROJECT_DIR$/20.Spring-Boot-Swagger2/20.Spring-Boot-Swagger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21.Spring-Boot-Actuator/21.Spring-Boot-Actuator.iml" filepath="$PROJECT_DIR$/21.Spring-Boot-Actuator/21.Spring-Boot-Actuator.iml" />
       <module fileurl="file://$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" filepath="$PROJECT_DIR$/01.Start-Spring-Boot/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring_practise.iml" filepath="$PROJECT_DIR$/.idea/spring_practise.iml" />
     </modules>
